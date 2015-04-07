@@ -1,0 +1,52 @@
+//
+//Estilos de skills
+//
+
+
+ //Imagen de fondo de la página de Skills
+.image-skills {
+	background: url(../images/workplace.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+.skills {
+    height: 493px;
+    left: 39%;
+    letter-spacing: 3px;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 493px;
+    z-index: 21;
+    .diamond { //Figura que en envuelve el contenido
+        background-color: rgba(255, 255, 255, .5);
+        height: 450px;
+        left: 18%;
+        position: absolute;
+        top: 37%;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        width: 450px;
+        z-index: 21;
+    }
+    .skills-content {
+        @include font-size(16);
+        left: 15.5%;
+        position: absolute;
+        top: 68%;
+        width: 97%;
+        z-index: 22;
+    }
+}
+
+
+
+

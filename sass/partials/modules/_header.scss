@@ -1,0 +1,69 @@
+//
+//Estilos de la navegación
+//
+
+nav {
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		margin: 0;
+	}
+}
+
+//Estilos del Logo
+.logo {
+	margin-bottom: 15%;
+}
+
+ //Imagen de fondo
+.pharse-main {
+	background: url(../images/wallpaper.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+// Navegación Principal
+.main-nav {
+	background-color: #fff;
+	float: left;
+	height: 100%;
+	position: absolute;
+	width: 19%;
+	z-index: 100;
+}
+
+.main-nav-items {
+	margin-top: 65%;
+	text-align: center;
+	&:after {
+	    background-color: #242424;
+	    content: "";
+	    height: 1px;
+	    position: absolute;
+	    right: 26.5%; 
+	    width: 46%;
+	    
+    }
+	li {
+		padding: 9% 0;
+	}
+}
+
+// Navegación redes sociales
+.main-social-nav {
+	text-align: center;
+	li{
+		display: inline-block;
+	}
+}
+
+//Iconos de las redes
+.facebook {
+	background: url(../images/faceicon.png) no-repeat;
+	background-size: contain;
+}

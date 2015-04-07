@@ -1,0 +1,52 @@
+//
+//Estilos de la página Who I am
+//
+
+//Imagen de fondo de la página de Who I am
+.image-about-me {
+	background: url(../images/whoiam.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+
+//Estilos del contenido
+.about {
+	font-size: 12px;
+    height: 493px;
+    left: 39%;
+    letter-spacing: 3px;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 493px;
+    z-index: 21;
+    .triangle-about { //Figura que envuelve el contenido
+        width: 0px;
+        height: 0px;
+        border-left: 380px solid transparent;
+        border-right: 380px solid transparent;
+        border-bottom: 600px solid rgba(255, 255, 255, .5);
+        margin: 27% 0 0 -18%;
+    }
+    .about-content {
+        @include font-size(16);
+        left: 25.5%;
+        position: absolute;
+        top: 71%;
+        width: 68%;
+        z-index: 22;
+    }
+}
+
+
+
+
+
+
+
+

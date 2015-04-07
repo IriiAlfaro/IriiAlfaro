@@ -1,0 +1,103 @@
+//
+// Estilos de la página de Contacto
+//
+
+//Imagen de fondo
+.image-contact {
+	background: url(../images/contact-image.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+
+//Estilos del contenido de la información de contacto
+
+.contact {
+    height: 493px;
+    left: 39%;
+    position: absolute;
+    text-transform: uppercase;
+    width: 493px;
+    .square { //Figura que envuelve el contenido
+    	background-color: rgba(255, 255, 255, .5);
+        height: 110%;
+        left: -40%;
+        position: absolute;
+        top: 27%;
+        width: 211%;
+    }
+    .contact-content {
+        @include font-size(16);
+        position: absolute;
+        z-index: 22;
+    }
+}
+
+.contact-form {
+    padding-top: 4%;
+}
+
+.contact input {
+    color: #F46C6C;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #F46C6C;
+    margin-bottom: 7px;
+    padding: 8px 180px 8px 4px;
+    font-size: 1rem;
+}
+
+::-webkit-input-placeholder {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 0px;
+}
+
+
+
+.social1:hover {
+    background: url(../images/Facebook2.png)no-repeat center center;
+    background-size: 50px;
+}
+
+.social2:hover {
+    background: url(../images/twitter2.png)no-repeat;
+    background-size: 50px;
+}
+
+.social3:hover {
+    background: url(../images/google2.png)no-repeat center center;
+    background-size: 50px;
+}
+
+textarea {
+    color: #F46C6C;
+    font-size: 1rem;
+}
+
+textarea:focus {
+    outline: 0px;
+}
+
+.comment {
+    background: transparent;
+    border: 1px solid #F46C6C;
+    height: 12rem;
+    margin-top: 10px;
+    width: 98%;
+}
+
+.bttn-submit {
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #F46C6C;
+    margin-top: 6px;
+    padding: 1% 5%;
+}
+
+

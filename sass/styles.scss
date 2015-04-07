@@ -1,0 +1,23 @@
+//
+// Estilos de Portafolio, Irina Alfaro 
+//
+
+//
+// Parciales / Páginas externas
+//
+
+
+// Tipografía
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+// Parciales base
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+
+// Módulos
+@import "partials/modules/header";
+@import "partials/modules/whoiam";
+@import "partials/modules/skills";
+@import "partials/modules/gallery";
+@import "partials/modules/contact";
