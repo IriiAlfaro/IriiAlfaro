@@ -1,0 +1,22 @@
+//
+// Placeholders
+//
+
+//clase para los botones
+%bttn {
+    background: transparent;
+    border: 1px solid #F46C6C;
+    margin-top: 9px;
+    padding: 2% 5%;
+}
+
+
+//Define el los estilos de las imágenes de fondo de cada sección
+%image-backgrounds {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}

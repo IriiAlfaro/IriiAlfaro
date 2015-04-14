@@ -4,12 +4,8 @@
 
 //Imagen de fondo
 .image-contact {
-	background: url(../images/contact-image.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
+	background-image: url(../images/contact-image.jpg);
+	@extend %image-backgrounds;
 }
 
 //Estilos del contenido de la información de contacto
@@ -45,23 +41,34 @@
     label { 
         display: inline-block;
     }
-    input {
-        color: #F46C6C;
+    .contact-input {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #F46C6C;
         display: block;
-        //fontsize
-        @include font-size(0.5);
+        @include font-size(15);
         margin-bottom: 7px;
         width: 83%;
     }
 }
 
 ::-webkit-input-placeholder {
-    color: #FFF;
-    font-size: 1rem;
+    color: #000;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1.5rem; 
 }
+
+::-moz-placeholder { 
+    color: #000;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1.5rem; 
+} // firefox 19+
+
+:-ms-input-placeholder { 
+    color: #000;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 1.5rem; 
+} // ie 
 
 input:focus {
     outline: 0px;
@@ -69,7 +76,7 @@ input:focus {
 
 textarea {
     color: #F46C6C;
-    font-size: 1rem;
+    @include font-size(15);
 }
 
 textarea:focus {
@@ -84,12 +91,10 @@ textarea:focus {
     width: 98%;
 }
 
-.bttn-submit {
-    color: #FFF;
-    background: transparent;
-    border: 1px solid #F46C6C;
-    margin-top: 6px;
-    padding: 1% 5%;
+.bttn {
+    @extend %bttn;
+    &:hover {
+        background-color: $secundarycolor;
+        color: #fff;
+    }
 }
-
-

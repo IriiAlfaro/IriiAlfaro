@@ -26,10 +26,14 @@ window.onload = function () {
             }           
         }
     }();
-
-    // document.getElementById("bttn-submit").onclick= function(){
-    //     appPortfolio.administrador.validar();
-    // }
+try{
+   document.getElementById("bttn-submit").onclick= function(){
+        appPortfolio.administrador.validar();
+    }  
+}
+catch(e){
+ console.log(e);
+}  
 
     appPortfolio.administrador.active();
 }

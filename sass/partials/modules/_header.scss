@@ -19,12 +19,8 @@ nav {
 
  //Imagen de fondo
 .phrase-main {
-	background: url(../images/wallpaper.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
+	background-image: url(../images/wallpaper.jpg);
+	@extend %image-backgrounds;
 }
 
 // Navegación Principal

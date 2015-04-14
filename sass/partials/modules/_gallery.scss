@@ -25,20 +25,96 @@
     width: 116%;
 }
 
-.projects-images1 {
+#projects-images1 {
     height: 50%;
     img {
         float: left;
         height: 100%;
-        width: 25%;
+        width: 100%;
     }
 }
 
-.projects-images2 {
+#projects-images2 {
   height: 50%;
   img {
     float: left;
     height: 100%;
-    width: 25%;
+    width: 100%;
   }
+}
+
+//HOVER IMAGENES
+.view {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 33%;
+   .mask {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(155, 91, 52, 0.7);
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    p {
+        @include font-size(16);
+        color: #fff;
+        text-align: center
+    }
+}
+
+.info {
+    display: inline-block;
+    padding: 7px 14px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    @extend %bttn;
+    &:hover {
+        background-color: $secundarycolor;
+        color: #fff;
+    }
+}
+
+.hover {
+    img {
+        transition: all 0.2s linear;
+    }
+    h2 {
+        background: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        text-align: center;
+        transform: translateY(-100px);
+        transition: all 0.2s ease-in-out;
+    }
+    p { 
+        opacity: 0;
+        text-transform: uppercase;
+        transform: translateY(100px);
+        transition: all 0.2s linear;
+    }
+}
+
+.hover:hover img { 
+    transform: scale(1.1);
+}
+
+.hover:hover .mask { 
+    opacity: 1;
+}
+.hover:hover h2,
+.hover:hover p,
+.hover:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.hover:hover p {
+    transition-delay: 0.1s;
+}
+.hover:hover a.info {
+    transition-delay: 0.2s;
 }

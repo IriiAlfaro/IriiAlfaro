@@ -4,12 +4,8 @@
 
 //Imagen de fondo de la página de Who I am
 .image-about-me {
-	background: url(../images/whoiam.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
+	background-image: url(../images/whoiam.jpg);
+    @extend %image-backgrounds;
 }
 
 

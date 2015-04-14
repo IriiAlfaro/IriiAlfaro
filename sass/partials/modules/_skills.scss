@@ -9,12 +9,8 @@ svg {
 }
 
 .image-skills {
-	background: url(../images/workplace.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	overflow: hidden;
-	position: fixed;
-	width: 100%;
+	background-image: url(../images/workplace.jpg);
+	@extend %image-backgrounds;
 }
 
 .skills {

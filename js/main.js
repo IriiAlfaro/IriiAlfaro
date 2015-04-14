@@ -78,26 +78,8 @@ $(document).ready(function(){
 		             '</div>' + //termina mask
 	            '</div>';  //termina view
 
-
-
-
-
-		// '<img src=' + proyecto[1].img + ' alt="Proyecto Hacienda" />' +
-		// '<img src=' + proyecto[2].img + ' alt="Proyecto Hacienda" />' +
-		// '<img src=' + proyecto[3].img + ' alt="Proyecto Hacienda" />' +
-		// '</div>';
-
-		// imageProject2 += '<div class="projects-images2">'+
-		// '<img src=' + proyecto[4].img + ' alt="Proyecto Hacienda" />' +
-		// '<img src=' + proyecto[5].img + ' alt="Proyecto Hacienda" />' +
-		// '<img src=' + proyecto[6].img + ' alt="Proyecto Hacienda" />' +
-		// '<img src=' + proyecto[7].img + ' alt="Proyecto Hacienda" />' +
-		// '</div>';
-
 		$('#projects-images1').append(imageProject1);
 		$('#projects-images2').append(imageProject2);
 	}
-//www.developerdrive.com/2015/01/8-simple-css-hover-effects/
-
 
 });

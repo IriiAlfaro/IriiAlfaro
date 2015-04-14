@@ -18,11 +18,38 @@ h1 {
   font-size: 40px;
   font-size: 4rem; }
 
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-size: 1.9rem;
+  padding: 10px;
+  margin: 20px 0 0 0; }
+
 a {
   color: #333;
   font-size: 17px;
   font-size: 1.7rem;
   text-decoration: none; }
+
+.active {
+  background-color: #5AC4BE;
+  color: #fff;
+  padding: 0.6em; }
+
+.info, .bttn {
+  background: transparent;
+  border: 1px solid #F46C6C;
+  margin-top: 9px;
+  padding: 2% 5%; }
+
+.phrase-main, .image-about-me, .image-skills, .image-contact {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%; }
 
 nav ul {
   padding: 0; }
@@ -30,26 +57,11 @@ nav li {
   list-style: none;
   margin: 0; }
 
-/*CLASE ACTIVE*/
-
-.active {
-  background-color: #5AC4BE;
-  color: #fff;
-  padding: 0.6em;
-}
-
-/*TERMINA*/
-
 .logo {
   margin-bottom: 15%; }
 
 .phrase-main {
-  background: url(../images/wallpaper.jpg) no-repeat;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  width: 100%; }
+  background-image: url(../images/wallpaper.jpg); }
 
 .main-nav {
   background-color: #fff;
@@ -208,12 +220,7 @@ nav li {
     font-size: 9px; } }
 /*TERMINA PALABRAS QUE CAMBIAN*/
 .image-about-me {
-  background: url(../images/whoiam.jpg) no-repeat;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  width: 100%; }
+  background-image: url(../images/whoiam.jpg); }
 
 .about {
   font-size: 12px;
@@ -244,12 +251,7 @@ svg {
   transform: rotate(-91deg); }
 
 .image-skills {
-  background: url(../images/workplace.jpg) no-repeat;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  width: 100%; }
+  background-image: url(../images/workplace.jpg); }
 
 .skills {
   height: 493px;
@@ -374,110 +376,10 @@ svg {
       padding: 9% 0;
       text-transform: uppercase; }
 
-
-/*INTENTO DE HOVER*/
-.view {
-    display: inline-block;
-    height: 100%;
-    position: relative;
-    text-align: center;
-    width: 33%;
-}
-
-.view .mask {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.view img {
-    display: block;
-    position: relative
-}
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    font-family: Raleway, serif;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
-}
-.view p {
-    font-family: Merriweather, serif;
-    font-style: italic;
-    font-size: 14px;
-    position: relative;
-    color: #fff;
-    padding: 0px 20px 0px;
-    text-align: center
-}
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    font-family: Raleway, serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000
-}
-
-.hover img { /*1*/
-    transition: all 0.2s linear;
-    width: 300px;
-    height: 200px;
-}
-.hover .mask {
-    opacity: 0;
-    background-color: rgba(155, 91, 52, 0.7);
-    transition: all 0.4s ease-in-out;
-    
-}
-.hover h2 {
-    transform: translateY(-100px);
-    opacity: 0;
-    font-family: Raleway, serif;
-    transition: all 0.2s ease-in-out;
-}
-.hover p { 
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.2s linear;
-}
-.hover a.info{
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-.hover:hover img { 
-    transform: scale(1.1);
-} 
-.hover:hover .mask { 
-    opacity: 1;
-}
-.hover:hover h2,
-.hover:hover p,
-.hover:hover a.info {
-    opacity: 1;
-    transform: translateY(0px);
-}
-.hover:hover p {
-    transition-delay: 0.1s;
-}
-.hover:hover a.info {
-    transition-delay: 0.2s;
-}
-
-/*intento de hover*/
-
-
 .projects {
   height: 100%;
   margin-left: 19%;
-  width: 109%; }/* cambio*/
+  width: 116%; }
 
 #projects-images1 {
   height: 50%; }
@@ -493,13 +395,71 @@ svg {
     height: 100%;
     width: 100%; }
 
-.image-contact {
-  background: url(../images/contact-image.jpg) no-repeat;
-  background-size: cover;
+.view {
+  display: inline-block;
   height: 100%;
   overflow: hidden;
-  position: fixed;
-  width: 100%; }
+  position: relative;
+  text-align: center;
+  width: 33%; }
+  .view .mask {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(155, 91, 52, 0.7);
+    opacity: 0;
+    transition: all 0.4s ease-in-out; }
+  .view p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center; }
+
+.info {
+  display: inline-block;
+  padding: 7px 14px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; }
+  .info:hover {
+    background-color: #F26B6C;
+    color: #fff; }
+
+.hover img {
+  transition: all 0.2s linear; }
+.hover h2 {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  text-align: center;
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out; }
+.hover p {
+  opacity: 0;
+  text-transform: uppercase;
+  transform: translateY(100px);
+  transition: all 0.2s linear; }
+
+.hover:hover img {
+  transform: scale(1.1); }
+
+.hover:hover .mask {
+  opacity: 1; }
+
+.hover:hover h2,
+.hover:hover p,
+.hover:hover a.info {
+  opacity: 1;
+  transform: translateY(0px); }
+
+.hover:hover p {
+  transition-delay: 0.1s; }
+
+.hover:hover a.info {
+  transition-delay: 0.2s; }
+
+.image-contact {
+  background-image: url(../images/contact-image.jpg); }
 
 .contact {
   height: 493px;
@@ -527,41 +487,38 @@ svg {
 
 .contact label {
   display: inline-block; }
-.contact-input { /*cambio*/
-  color: #F46C6C;
+.contact .contact-input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #F46C6C;
   display: block;
-  font-size: 0.5px;
-  font-size: 1.5rem; /*cambio*/
+  font-size: 15px;
+  font-size: 1.5rem;
   margin-bottom: 7px;
   width: 83%; }
 
 ::-webkit-input-placeholder {
   color: #000;
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 1.5rem; } /*cambio*/
+  font-size: 1.5rem; }
 
-
-::-moz-placeholder { 
+::-moz-placeholder {
   color: #000;
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 1.5rem; 
-} /* firefox 19+ */
+  font-size: 1.5rem; }
 
-:-ms-input-placeholder { 
+:-ms-input-placeholder {
   color: #000;
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 1.5rem; 
-} /* ie */
+  font-size: 1.5rem; }
 
 input:focus {
   outline: 0px; }
 
 textarea {
   color: #F46C6C;
-  font-size: 1.5rem; } /*cambio*/
+  font-size: 15px;
+  font-size: 1.5rem; }
 
 textarea:focus {
   outline: 0px; }
@@ -573,18 +530,8 @@ textarea:focus {
   margin-top: 10px;
   width: 98%; }
 
-
-
-.bttn-submit { /*cambio*/
-  color: #000;
-  background: transparent;
-  border: 1px solid #F46C6C;
-  margin-top: 9px;
-  padding: 2% 5%; }
-
-.bttn-submit:hover {
-  background-color: #F46C6C;
-  color: #fff;
-}
+.bttn:hover {
+  background-color: #F26B6C;
+  color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
