@@ -1,0 +1,22 @@
+//
+// Estilos de la página de proyectos
+//
+
+.details-project {
+	margin-left: 33em; 
+	img {
+		margin: auto;
+        display: block;
+        padding: 3em;
+	}
+	.details {
+		margin: auto;
+		width: 50%;
+		h3 {
+			@include font-size(18);
+		}
+		p {
+			@include font-size(14);
+		}
+	}
+}

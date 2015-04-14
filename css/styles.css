@@ -458,6 +458,22 @@ svg {
 .hover:hover a.info {
   transition-delay: 0.2s; }
 
+.details-project {
+  margin-left: 33em; }
+  .details-project img {
+    margin: auto;
+    display: block;
+    padding: 3em; }
+  .details-project .details {
+    margin: auto;
+    width: 50%; }
+    .details-project .details h3 {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    .details-project .details p {
+      font-size: 14px;
+      font-size: 1.4rem; }
+
 .image-contact {
   background-image: url(../images/contact-image.jpg); }
 

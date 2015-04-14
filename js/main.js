@@ -15,7 +15,7 @@ $(document).ready(function(){
 			  }
 		});	
 	});
-
+	//Aquí se empieza a dibujar el contenido 
 	function dibujaProyectos(proyecto){
 		var imageProject1 = '';
 		var imageProject2 = '';
