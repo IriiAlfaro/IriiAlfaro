@@ -3,7 +3,8 @@
 //
 
 .gallery-content {
-    background-color: aquamarine;
+    background-color: $secundarycolor;
+    display: -webkit-inline-box;
     float: left;
     height: 100%;	
     left: 19%;
@@ -17,4 +18,27 @@
             text-transform: uppercase;
         }
     }
+}
+.projects {
+    height: 100%;
+    margin-left: 19%;
+    width: 116%;
+}
+
+.projects-images1 {
+    height: 50%;
+    img {
+        float: left;
+        height: 100%;
+        width: 25%;
+    }
+}
+
+.projects-images2 {
+  height: 50%;
+  img {
+    float: left;
+    height: 100%;
+    width: 25%;
+  }
 }

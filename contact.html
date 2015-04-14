@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Portfolio, Irina Alfaro">
 
-	<title>Irina Alfaro</title>
+	<title>Contact</title>
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<header>
 
-		<nav class="main-nav">
+		<nav class="main-nav" id="nav">
 			<ul class="main-nav-items">
-			    <li><a href="portafolio.html"><img class="logo" src="images/logotransp.png" alt="Logo" width="120"></a></li>
+			    <li><a href="index.html"><img class="logo" src="images/logotransp.png" alt="Logo" width="120"></a></li>
 				<li><a href="whoiam.html">Who I am</a></li>
 				<li><a href="skills.html">Skills</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -23,10 +23,10 @@
 			</ul>
 
 			<ul class="main-social-nav">
-	       		<li><a href="https://www.facebook.com/irii.af">Facebook</a></li>
-	       		<li><a href="https://plus.google.com/u/0/112703411458322969450/posts">Gmail</a></li>
-	       		<li><a href="https://twitter.com/IriAf03">Twitter</a></li>
-	       	</ul>
+				<li><a href="https://github.com/IriiAlfaro" class="github"><img src="images/gitHub-icon.png" width="25" height="25"></a></li>
+				<li><a href="https://www.facebook.com/irii.af" class="facebook"><img src="images/facebook-icon.png" width="25" height="25"></a></li>
+	       		<li><a href="https://twitter.com/IriAf03" class="twitter"><img src="images/twitter-icon.png" width="25" height="25"></a></li>
+			</ul>
 	    </nav>
 
 	</header>
@@ -36,30 +36,29 @@
 	        <div class="square"></div>
 	        <div class="contact-content">
 	        	<h2>
-	        	Let's make dreams happen together
+	        	Let's make together, dreams happen
 	        	</h2>
-	        	<form class="contact-form">
-					<input type="text" placeholder="Name"/>
-					<input type="email" placeholder="Email"/>
-					<input type="text" placeholder="Subject"/>
-					<textarea placeholder="Message" class="comment"></textarea>
-					<button class="bttn-submit">Enviar</button>
+	        	<form class="contact-form" name="contact">
+	        		<label for="name">Name </label>
+					<input type="text" class="contact-input" pattern="|^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]*$|" title="Debes de ingresar letras" required name="name" id="name-contact"/>
+					<p id="result"></p>
+
+					<label for="email">E-mail </label>
+					<input type="email" class="contact-input" name="email" required/>
+
+					<label for="subjec">Subject</label>
+					<input type="text" class="contact-input"name="subject" id="subject-contact"/>
+
+					<textarea placeholder="Message" required class="comment"></textarea>
+					<input class="bttn-submit" id="bttn-submit" type="submit" value="Sent">
 				</form>
-	       	    <div class="find-me">
-	       		    <img src="#" class="icon-contact" alt="celphone">
-	       		    <span>8422-1999</span>
-
-	       		    <img src="#" class="icon-contact" alt="email">
-	       		    <span>iaf643@gmail.com</span>
-
-	       		    <img src="#" class="ico-contact" alt="address">
-	       		    <span>Calle Blancos, San José</span>
-	       	    </div>
 	        </div><!-- END .contact-content -->
 	        
 
 	   </div> <!-- END .contact -->
-	</div> 
+	</div>
+
+	<script type="text/javascript" src="js/framework.js"></script>
 
 </body>
 </html>

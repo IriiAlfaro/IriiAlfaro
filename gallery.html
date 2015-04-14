@@ -13,42 +13,32 @@
 <body>
 	<header>
 
-		<nav class="main-nav">
+		<nav class="main-nav" id="nav">
 			<ul class="main-nav-items">
-			    <li><a href="portafolio.html"><img class="logo" src="images/logotransp.png" alt="Logo" width="120"></a></li>
+			    <li><a href="index.html"><img class="logo" src="images/logotransp.png" alt="Logo" width="120"></a></li>
 				<li><a href="whoiam.html">Who I am</a></li>
 				<li><a href="skills.html">Skills</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="#" id="gallery">Gallery</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 
 			<ul class="main-social-nav">
-				<li><a href="https://www.facebook.com/irii.af">Facebook</a></li>
-	       		<li><a href="https://plus.google.com/u/0/112703411458322969450/posts">Gmail</a></li>
-	       		<li><a href="https://twitter.com/IriAf03">Twitter</a></li>
+				<li><a href="https://github.com/IriiAlfaro" class="github"><img src="images/gitHub-icon.png" width="25" height="25"></a></li>
+				<li><a href="https://www.facebook.com/irii.af" class="facebook"><img src="images/facebook-icon.png" width="25" height="25"></a></li>
+	       		<li><a href="https://twitter.com/IriAf03" class="twitter"><img src="images/twitter-icon.png" width="25" height="25"></a></li>
 			</ul>
 		</nav>
 
 	</header>
 
-	<div class="triangle"></div>
+	<div class="projects" id="prueba">
+		<!-- CONTENIDO GENERADO POR MEDIO DE AJAX -->
+		<div id="projects-images1"></div>
+		<div id="projects-images2"></div>
+	</div>
 
-	<div class="gallery-content">
-
-	    <nav class="gallery-nav">
-	        <ul>
-	            <li><a href="#">all</a></li>
-	      	    <li><a href="#">web</a></li>
-	      	    <li><a href="#">apps</a></li>
-	      	    <li><a href="#">javascript</a></li>
-	        </ul>
-	    </nav>
-
-	    <div class="projects-images">
-
-	    	<!-- Las imagenes de los proyectos 
-	    	se generaran apartir de un JSON -->
-
-	    </div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

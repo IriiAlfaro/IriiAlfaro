@@ -26,19 +26,17 @@
     width: 493px;
     z-index: 21;
     .triangle-about { //Figura que envuelve el contenido
-        width: 0px;
-        height: 0px;
         border-left: 380px solid transparent;
         border-right: 380px solid transparent;
-        border-bottom: 600px solid rgba(255, 255, 255, .5);
-        margin: 27% 0 0 -18%;
+        border-bottom: 600px solid rgba(255, 255, 255, .3);
+        margin: 11% 0 0 -23%;
     }
     .about-content {
         @include font-size(16);
         left: 25.5%;
         position: absolute;
-        top: 71%;
-        width: 68%;
+        top: 44%;
+        width: 56%;
         z-index: 22;
     }
 }
