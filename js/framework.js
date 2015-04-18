@@ -26,7 +26,7 @@ window.onload = function () {
         }
     }();
 
-    //
+    //Esto se usó para que no tirará errores en páginas donde se encuentra el id, ya que solo esta en la página de comtacto
     try{
         document.getElementById("bttn-submit").onclick= function(){
             appPortfolio.administrador.validar();
