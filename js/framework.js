@@ -1,5 +1,10 @@
 window.onload = function () {
     var appPortfolio = {};
+
+    //Closure
+    //Son funciones que se refieren a variables 
+    //independientes (libres). En otras palabras, la función 
+    //definida en el cierre 'recuerda' el ambiente en el cual fue creado.
     
     appPortfolio.administrador = function () {
 
@@ -26,7 +31,8 @@ window.onload = function () {
         }
     }();
 
-    //Esto se usó para que no tirará errores en páginas donde se encuentra el id, ya que solo esta en la página de comtacto
+    //Esto se usó para que no tirará errores en páginas donde se encuentra el id, 
+    // ya que solo esta en la página de comtacto
     try{
         document.getElementById("bttn-submit").onclick= function(){
             appPortfolio.administrador.validar();
@@ -40,18 +46,18 @@ window.onload = function () {
 }
 
 //Augmenting //no funciona
-Function.prototype.method = function(name, func){
+Function.prototype.method = function elElemento(name, func){
     if(!this.prototype[name]){
         this.prototype[name] = func;
     }
     return this;
 };
 
-var elElemento = document.body.querySelector('.item');
+var elElemento = document.body.querySelectorAll('.item');
 console.log(elElemento);
 
 //Augment  
-Element.method('cambiarColor', 'elElemento', function(c){
+elElemento.method('cambiarColor', 'elElemento', function(c){
     for (var i = 0; i <= elElemento.length; i++) {
         elElemento.style.color = c;
     }
