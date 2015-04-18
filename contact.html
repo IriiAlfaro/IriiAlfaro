@@ -16,10 +16,10 @@
 		<nav class="main-nav" id="nav">
 			<ul class="main-nav-items">
 			    <li><a href="index.html"><img class="logo" src="images/logotransp.png" alt="Logo" width="120"></a></li>
-				<li><a href="whoiam.html">Who I am</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a class="item" href="whoiam.html">Who I am</a></li>
+				<li><a class="item" href="skills.html">Skills</a></li>
+				<li><a class="item" href="gallery.html">Gallery</a></li>
+				<li><a id="item" href="contact.html">Contact</a></li>
 			</ul>
 
 			<ul class="main-social-nav">
@@ -47,7 +47,8 @@
 					<input type="email" class="contact-input" name="email" required/>
 
 					<label for="subjec">Subject</label>
-					<input type="text" class="contact-input"name="subject" id="subject-contact"/>
+					<input type="text" class="contact-input"name="subject" required id="subject-contact"/>
+					<p id="result"></p>
 
 					<textarea placeholder="Message" required class="comment"></textarea>
 					<input class="bttn" id="bttn-submit" type="submit" value="Sent">
